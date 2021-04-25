@@ -1,0 +1,7 @@
+Player(
+    name: "You",
+    cards: [
+        "card/FirstCard.ron",
+        "card/FirstCard.ron",
+    ],
+)

@@ -1,0 +1,4 @@
+(
+  title: "amethyst_card_game",
+  dimensions: Some((1280, 720)),
+)

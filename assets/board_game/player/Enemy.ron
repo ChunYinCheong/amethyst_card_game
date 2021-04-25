@@ -1,0 +1,6 @@
+Player(
+    name: "Enemy",
+    cards: [
+        "card/FirstCard.ron",
+    ],
+)

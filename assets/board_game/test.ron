@@ -1,0 +1,6 @@
+Board(
+    players: [
+        "player/You.ron",
+        "player/Enemy.ron",
+    ],
+)

@@ -1,0 +1,585 @@
+#![enable(implicit_some)]
+// Detailed field information can be found at https://docs.amethyst.rs/master/amethyst_ui/enum.UiWidget.html and related pages
+Container(
+    transform: (
+        id: "background",
+        anchor: Middle,
+        stretch: XY( x_margin: 0., y_margin: 0., keep_aspect_ratio: false),
+        width: 20.,
+        height: 20.,
+    ),
+    background: SolidColor(0.1, 0.1, 0.1, 0.5),
+    children: [
+
+        Container(
+            transform: (
+                id: "player2_hands",
+                y: 0,
+                width: 1280.,
+                height: 100.,
+                anchor: TopMiddle,
+                pivot: TopMiddle,
+            ),
+            background: SolidColor(1.0, 0.0, 0.0, 0.5),
+            children: [
+            ]
+        ),
+        Container(
+            transform: (
+                id: "player2_fronts",
+                y: -100,
+                width: 1280.,
+                height: 100.,
+                anchor: TopMiddle,
+                pivot: TopMiddle,
+            ),
+            background: SolidColor(0.0, 1.0, 0.0, 0.5),
+            children: [
+                Container(
+                    transform: (
+                        id: "player2_front_container_1",
+                        x: 0,
+                        width: 100.,
+                        height: 100.,
+                        anchor: TopLeft,
+                        pivot: TopLeft,
+                    ),
+                    background: SolidColor(1.0, 0.0, 0.0, 0.5),
+                    children: [
+                        Button(
+                            transform: (
+                                id: "player2_front_button_1",
+                                width: 90.,
+                                height: 90.,
+                                tab_order: 1,
+                                // stretch: XY( x_margin: 0., y_margin: 0., keep_aspect_ratio: true),
+                                mouse_reactive: true,
+                            ),
+                            button: (
+                                text: "START GAME",
+                                font: File("font/square.ttf", ("TTF", ())),
+                                font_size: 24.,
+                                normal_text_color: (1.0, 0.65, 0., 1.0), // ffa500
+                                normal_image: SolidColor(0., 0., 0., 1.),
+                                hover_image: SolidColor(0.1, 0.1, 0.1, 1.),
+                                press_image: SolidColor(0.15, 0.15, 0.15, 1.),
+                            )
+                        ),
+                    ]
+                ),
+                Container(
+                    transform: (
+                        id: "player2_front_container_2",
+                        x: 100,
+                        width: 100.,
+                        height: 100.,
+                        anchor: TopLeft,
+                        pivot: TopLeft,
+                    ),
+                    background: SolidColor(1.0, 0.0, 0.0, 0.5),
+                    children: [
+                        Button(
+                            transform: (
+                                id: "player2_front_button_2",
+                                width: 90.,
+                                height: 90.,
+                                tab_order: 1,
+                                // stretch: XY( x_margin: 0., y_margin: 0., keep_aspect_ratio: true),
+                                mouse_reactive: true,
+                            ),
+                            button: (
+                                text: "START GAME",
+                                font: File("font/square.ttf", ("TTF", ())),
+                                font_size: 24.,
+                                normal_text_color: (1.0, 0.65, 0., 1.0), // ffa500
+                                normal_image: SolidColor(0., 0., 0., 1.),
+                                hover_image: SolidColor(0.1, 0.1, 0.1, 1.),
+                                press_image: SolidColor(0.15, 0.15, 0.15, 1.),
+                            )
+                        ),
+                    ]
+                ),
+                Container(
+                    transform: (
+                        id: "player2_front_container_3",
+                        x: 200,
+                        width: 100.,
+                        height: 100.,
+                        anchor: TopLeft,
+                        pivot: TopLeft,
+                    ),
+                    background: SolidColor(1.0, 0.0, 0.0, 0.5),
+                    children: [
+                        Button(
+                            transform: (
+                                id: "player2_front_button_3",
+                                width: 90.,
+                                height: 90.,
+                                tab_order: 1,
+                                // stretch: XY( x_margin: 0., y_margin: 0., keep_aspect_ratio: true),
+                                mouse_reactive: true,
+                            ),
+                            button: (
+                                text: "START GAME",
+                                font: File("font/square.ttf", ("TTF", ())),
+                                font_size: 24.,
+                                normal_text_color: (1.0, 0.65, 0., 1.0), // ffa500
+                                normal_image: SolidColor(0., 0., 0., 1.),
+                                hover_image: SolidColor(0.1, 0.1, 0.1, 1.),
+                                press_image: SolidColor(0.15, 0.15, 0.15, 1.),
+                            )
+                        ),
+                    ]
+                ),
+                Container(
+                    transform: (
+                        id: "player2_front_container_4",
+                        x: 300,
+                        width: 100.,
+                        height: 100.,
+                        anchor: TopLeft,
+                        pivot: TopLeft,
+                    ),
+                    background: SolidColor(1.0, 0.0, 0.0, 0.5),
+                    children: [
+                        Button(
+                            transform: (
+                                id: "player2_front_button_4",
+                                width: 90.,
+                                height: 90.,
+                                tab_order: 1,
+                                // stretch: XY( x_margin: 0., y_margin: 0., keep_aspect_ratio: true),
+                                mouse_reactive: true,
+                            ),
+                            button: (
+                                text: "START GAME",
+                                font: File("font/square.ttf", ("TTF", ())),
+                                font_size: 24.,
+                                normal_text_color: (1.0, 0.65, 0., 1.0), // ffa500
+                                normal_image: SolidColor(0., 0., 0., 1.),
+                                hover_image: SolidColor(0.1, 0.1, 0.1, 1.),
+                                press_image: SolidColor(0.15, 0.15, 0.15, 1.),
+                            )
+                        ),
+                    ]
+                ),
+                Container(
+                    transform: (
+                        id: "player2_front_container_5",
+                        x: 400,
+                        width: 100.,
+                        height: 100.,
+                        anchor: TopLeft,
+                        pivot: TopLeft,
+                    ),
+                    background: SolidColor(1.0, 0.0, 0.0, 0.5),
+                    children: [
+                        Button(
+                            transform: (
+                                id: "player2_front_button_5",
+                                width: 90.,
+                                height: 90.,
+                                tab_order: 1,
+                                // stretch: XY( x_margin: 0., y_margin: 0., keep_aspect_ratio: true),
+                                mouse_reactive: true,
+                            ),
+                            button: (
+                                text: "START GAME",
+                                font: File("font/square.ttf", ("TTF", ())),
+                                font_size: 24.,
+                                normal_text_color: (1.0, 0.65, 0., 1.0), // ffa500
+                                normal_image: SolidColor(0., 0., 0., 1.),
+                                hover_image: SolidColor(0.1, 0.1, 0.1, 1.),
+                                press_image: SolidColor(0.15, 0.15, 0.15, 1.),
+                            )
+                        ),
+                    ]
+                ),
+            ]
+        ),
+
+        Container(
+            transform: (
+                id: "player1_fronts",
+                y: 100,
+                width: 1280.,
+                height: 100.,
+                anchor: BottomMiddle,
+                pivot: BottomMiddle,
+            ),
+            background: SolidColor(0.0, 1.0, 0.0, 0.5),
+            children: [
+
+                Container(
+                    transform: (
+                        id: "player1_front_container_1",
+                        x: 0,
+                        width: 100.,
+                        height: 100.,
+                        anchor: TopLeft,
+                        pivot: TopLeft,
+                    ),
+                    background: SolidColor(1.0, 0.0, 0.0, 0.5),
+                    children: [
+                        Button(
+                            transform: (
+                                id: "player1_front_button_1",
+                                width: 90.,
+                                height: 90.,
+                                tab_order: 1,
+                                // stretch: XY( x_margin: 0., y_margin: 0., keep_aspect_ratio: true),
+                                mouse_reactive: true,
+                            ),
+                            button: UiButtonData(
+                                // id: "test",
+                                text: "START GAME",
+                                font: File("font/square.ttf", ("TTF", ())),
+                                font_size: 24.,
+                                normal_text_color: (1.0, 0.65, 0., 1.0), // ffa500
+                                normal_image: SolidColor(0., 0., 0., 1.),
+                                hover_image: SolidColor(0.1, 0.1, 0.1, 1.),
+                                press_image: SolidColor(0.15, 0.15, 0.15, 1.),
+                            )
+                        ),
+                    ]
+                ),
+                Container(
+                    transform: (
+                        id: "player1_front_container_2",
+                        x: 100,
+                        width: 100.,
+                        height: 100.,
+                        anchor: TopLeft,
+                        pivot: TopLeft,
+                    ),
+                    background: SolidColor(1.0, 0.0, 0.0, 0.5),
+                    children: [
+                        Button(
+                            transform: (
+                                id: "player1_front_button_2",
+                                width: 90.,
+                                height: 90.,
+                                tab_order: 1,
+                                // stretch: XY( x_margin: 0., y_margin: 0., keep_aspect_ratio: true),
+                                mouse_reactive: true,
+                            ),
+                            button: (
+                                text: "START GAME",
+                                font: File("font/square.ttf", ("TTF", ())),
+                                font_size: 24.,
+                                normal_text_color: (1.0, 0.65, 0., 1.0), // ffa500
+                                normal_image: SolidColor(0., 0., 0., 1.),
+                                hover_image: SolidColor(0.1, 0.1, 0.1, 1.),
+                                press_image: SolidColor(0.15, 0.15, 0.15, 1.),
+                            )
+                        ),
+                    ]
+                ),
+                Container(
+                    transform: (
+                        id: "player1_front_container_3",
+                        x: 200,
+                        width: 100.,
+                        height: 100.,
+                        anchor: TopLeft,
+                        pivot: TopLeft,
+                    ),
+                    background: SolidColor(1.0, 0.0, 0.0, 0.5),
+                    children: [
+                        Button(
+                            transform: (
+                                id: "player1_front_button_3",
+                                width: 90.,
+                                height: 90.,
+                                tab_order: 1,
+                                // stretch: XY( x_margin: 0., y_margin: 0., keep_aspect_ratio: true),
+                                mouse_reactive: true,
+                            ),
+                            button: (
+                                text: "START GAME",
+                                font: File("font/square.ttf", ("TTF", ())),
+                                font_size: 24.,
+                                normal_text_color: (1.0, 0.65, 0., 1.0), // ffa500
+                                normal_image: SolidColor(0., 0., 0., 1.),
+                                hover_image: SolidColor(0.1, 0.1, 0.1, 1.),
+                                press_image: SolidColor(0.15, 0.15, 0.15, 1.),
+                            )
+                        ),
+                    ]
+                ),
+                Container(
+                    transform: (
+                        id: "player1_front_container_4",
+                        x: 300,
+                        width: 100.,
+                        height: 100.,
+                        anchor: TopLeft,
+                        pivot: TopLeft,
+                    ),
+                    background: SolidColor(1.0, 0.0, 0.0, 0.5),
+                    children: [
+                        Button(
+                            transform: (
+                                id: "player1_front_button_4",
+                                width: 90.,
+                                height: 90.,
+                                tab_order: 1,
+                                // stretch: XY( x_margin: 0., y_margin: 0., keep_aspect_ratio: true),
+                                mouse_reactive: true,
+                            ),
+                            button: (
+                                text: "START GAME",
+                                font: File("font/square.ttf", ("TTF", ())),
+                                font_size: 24.,
+                                normal_text_color: (1.0, 0.65, 0., 1.0), // ffa500
+                                normal_image: SolidColor(0., 0., 0., 1.),
+                                hover_image: SolidColor(0.1, 0.1, 0.1, 1.),
+                                press_image: SolidColor(0.15, 0.15, 0.15, 1.),
+                            )
+                        ),
+                    ]
+                ),
+                Container(
+                    transform: (
+                        id: "player1_front_container_5",
+                        x: 400,
+                        width: 100.,
+                        height: 100.,
+                        anchor: TopLeft,
+                        pivot: TopLeft,
+                    ),
+                    background: SolidColor(1.0, 0.0, 0.0, 0.5),
+                    children: [
+                        Button(
+                            transform: (
+                                id: "player1_front_button_5",
+                                width: 90.,
+                                height: 90.,
+                                tab_order: 1,
+                                // stretch: XY( x_margin: 0., y_margin: 0., keep_aspect_ratio: true),
+                                mouse_reactive: true,
+                            ),
+                            button: (
+                                text: "START GAME",
+                                font: File("font/square.ttf", ("TTF", ())),
+                                font_size: 24.,
+                                normal_text_color: (1.0, 0.65, 0., 1.0), // ffa500
+                                normal_image: SolidColor(0., 0., 0., 1.),
+                                hover_image: SolidColor(0.1, 0.1, 0.1, 1.),
+                                press_image: SolidColor(0.15, 0.15, 0.15, 1.),
+                            )
+                        ),
+                    ]
+                ),
+
+            ]
+        ),
+        Container(
+            transform: (
+                id: "player1_hands",
+                y: 0,
+                width: 1280.,
+                height: 100.,
+                anchor: BottomMiddle,
+                pivot: BottomMiddle,
+            ),
+            background: SolidColor(1.0, 0.0, 0.0, 0.5),
+            children: [
+
+                Container(
+                    transform: (
+                        id: "player1_hand_container_1",
+                        x: 0,
+                        width: 100.,
+                        height: 100.,
+                        anchor: TopLeft,
+                        pivot: TopLeft,
+                    ),
+                    background: SolidColor(1.0, 0.0, 0.0, 0.5),
+                    children: [
+                        Button(
+                            transform: (
+                                id: "player1_hand_button_1",
+                                width: 90.,
+                                height: 90.,
+                                tab_order: 1,
+                                // stretch: XY( x_margin: 0., y_margin: 0., keep_aspect_ratio: true),
+                                mouse_reactive: true,
+                            ),
+                            button: (
+                                text: "START GAME",
+                                font: File("font/square.ttf", ("TTF", ())),
+                                font_size: 24.,
+                                normal_text_color: (1.0, 0.65, 0., 1.0), // ffa500
+                                normal_image: SolidColor(0., 0., 0., 1.),
+                                hover_image: SolidColor(0.1, 0.1, 0.1, 1.),
+                                press_image: SolidColor(0.15, 0.15, 0.15, 1.),
+                            )
+                        ),
+                    ]
+                ),
+                Container(
+                    transform: (
+                        id: "player1_hand_container_2",
+                        x: 100,
+                        width: 100.,
+                        height: 100.,
+                        anchor: TopLeft,
+                        pivot: TopLeft,
+                    ),
+                    background: SolidColor(1.0, 0.0, 0.0, 0.5),
+                    children: [
+                        Button(
+                            transform: (
+                                id: "player1_hand_button_2",
+                                width: 90.,
+                                height: 90.,
+                                tab_order: 1,
+                                // stretch: XY( x_margin: 0., y_margin: 0., keep_aspect_ratio: true),
+                                mouse_reactive: true,
+                            ),
+                            button: (
+                                text: "START GAME",
+                                font: File("font/square.ttf", ("TTF", ())),
+                                font_size: 24.,
+                                normal_text_color: (1.0, 0.65, 0., 1.0), // ffa500
+                                normal_image: SolidColor(0., 0., 0., 1.),
+                                hover_image: SolidColor(0.1, 0.1, 0.1, 1.),
+                                press_image: SolidColor(0.15, 0.15, 0.15, 1.),
+                            )
+                        ),
+                    ]
+                ),
+                Container(
+                    transform: (
+                        id: "player1_hand_container_3",
+                        x: 200,
+                        width: 100.,
+                        height: 100.,
+                        anchor: TopLeft,
+                        pivot: TopLeft,
+                    ),
+                    background: SolidColor(1.0, 0.0, 0.0, 0.5),
+                    children: [
+                        Button(
+                            transform: (
+                                id: "player1_hand_button_3",
+                                width: 90.,
+                                height: 90.,
+                                tab_order: 1,
+                                // stretch: XY( x_margin: 0., y_margin: 0., keep_aspect_ratio: true),
+                                mouse_reactive: true,
+                            ),
+                            button: (
+                                text: "START GAME",
+                                font: File("font/square.ttf", ("TTF", ())),
+                                font_size: 24.,
+                                normal_text_color: (1.0, 0.65, 0., 1.0), // ffa500
+                                normal_image: SolidColor(0., 0., 0., 1.),
+                                hover_image: SolidColor(0.1, 0.1, 0.1, 1.),
+                                press_image: SolidColor(0.15, 0.15, 0.15, 1.),
+                            )
+                        ),
+                    ]
+                ),
+                Container(
+                    transform: (
+                        id: "player1_hand_container_4",
+                        x: 300,
+                        width: 100.,
+                        height: 100.,
+                        anchor: TopLeft,
+                        pivot: TopLeft,
+                    ),
+                    background: SolidColor(1.0, 0.0, 0.0, 0.5),
+                    children: [
+                        Button(
+                            transform: (
+                                id: "player1_hand_button_4",
+                                width: 90.,
+                                height: 90.,
+                                tab_order: 1,
+                                // stretch: XY( x_margin: 0., y_margin: 0., keep_aspect_ratio: true),
+                                mouse_reactive: true,
+                            ),
+                            button: (
+                                text: "START GAME",
+                                font: File("font/square.ttf", ("TTF", ())),
+                                font_size: 24.,
+                                normal_text_color: (1.0, 0.65, 0., 1.0), // ffa500
+                                normal_image: SolidColor(0., 0., 0., 1.),
+                                hover_image: SolidColor(0.1, 0.1, 0.1, 1.),
+                                press_image: SolidColor(0.15, 0.15, 0.15, 1.),
+                            )
+                        ),
+                    ]
+                ),
+                Container(
+                    transform: (
+                        id: "player1_hand_container_5",
+                        x: 400,
+                        width: 100.,
+                        height: 100.,
+                        anchor: TopLeft,
+                        pivot: TopLeft,
+                    ),
+                    background: SolidColor(1.0, 0.0, 0.0, 0.5),
+                    children: [
+                        Button(
+                            transform: (
+                                id: "player1_hand_button_5",
+                                width: 90.,
+                                height: 90.,
+                                tab_order: 1,
+                                // stretch: XY( x_margin: 0., y_margin: 0., keep_aspect_ratio: true),
+                                mouse_reactive: true,
+                            ),
+                            button: (
+                                text: "START GAME",
+                                font: File("font/square.ttf", ("TTF", ())),
+                                font_size: 24.,
+                                normal_text_color: (1.0, 0.65, 0., 1.0), // ffa500
+                                normal_image: SolidColor(0., 0., 0., 1.),
+                                hover_image: SolidColor(0.1, 0.1, 0.1, 1.),
+                                press_image: SolidColor(0.15, 0.15, 0.15, 1.),
+                            )
+                        ),
+                    ]
+                ),
+
+            ]
+        ),
+
+
+        Container(
+            transform: (
+                id: "right_bar",
+                width: 500.,
+                height: 1024.,
+                anchor: BottomRight,
+                pivot: BottomRight,
+            ),
+            background: SolidColor(0., 1., 0., 0.5),
+            children: [
+                Label(
+                    transform: (
+                        id: "message_text",
+                        x: 0.,
+                        y: 0.,
+                        z: 2.,
+                        width: 500.,
+                        height: 1024.,
+                        anchor: Middle,
+                    ),
+                    text: (
+                        text: "Message Log\n",
+                        font_size: 32.,
+                        color: (0.2, 0.2, 1.0, 1.0),
+                        line_mode: Wrap,
+                        align: BottomLeft,
+                    )
+                ),
+            ]
+        ),
+    ],
+)

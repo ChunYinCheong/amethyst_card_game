@@ -1,0 +1,15 @@
+Card(
+    name: "First Card",
+    actions: [
+        Attack(
+            targets: [
+                TargetType(
+                    position_front: true,
+                )
+            ],
+        ),
+    ],
+    attributes: [
+
+    ],
+)
